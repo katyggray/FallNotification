@@ -1,5 +1,6 @@
 package edu.ucdenver.fallnotification;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class Patient {
@@ -7,7 +8,7 @@ public class Patient {
     private String lastName;
     private int roomNumber;
     private int age;
-    public Calendar[] sessions;
+    public ArrayList<Calendar> sessions;
 
     private Patient(String firstName, String lastName, int roomNumber, int age) {
         this.firstName = firstName;
@@ -46,5 +47,13 @@ public class Patient {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public ArrayList<Calendar> getSessions() {
+        return sessions;
+    }
+
+    public void setSessions(Calendar sessions) {
+        this.sessions.add(sessions);
     }
 }
