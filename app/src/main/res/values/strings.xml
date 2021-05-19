@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FallDetection</string>
+    <string name="title_home">Home</string>
+    <string name="title_patients">Patients</string>
+    <string name="title_bluetooth">Bluetooth</string>
+    <string name="bluetooth_filler">This fragment will start bluetooth connection</string>
+    <string name="patients_filler">This fragment will list patients</string>
+    <string name="home_filler">This fragment is home</string>
 </resources>
