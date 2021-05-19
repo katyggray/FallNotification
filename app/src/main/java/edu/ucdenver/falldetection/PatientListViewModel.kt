@@ -15,8 +15,9 @@ class PatientListViewModel : ViewModel() {
             val patient = Patient()
             patient.firstName = firstNames[i]
             patient.lastName = lastNames[i]
+            patient.fullName = patient.firstName + " " + patient.lastName
             patient.age = 80 + i
-            patient.roomNumber = i
+            patient.roomNumber = i + 1
             patient.sessionHistory.add(dateNow)
             patients += patient
         }

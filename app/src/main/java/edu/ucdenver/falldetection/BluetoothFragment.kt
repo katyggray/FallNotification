@@ -1,4 +1,6 @@
 package edu.ucdenver.falldetection
 
-class BluetoothFragment {
+import androidx.fragment.app.Fragment
+
+class BluetoothFragment : Fragment() {
 }
