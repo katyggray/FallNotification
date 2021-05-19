@@ -71,6 +71,7 @@ class PatientListFragment : Fragment() {
             roomTextView.text = this.patient.roomNumber.toString()
         }
 
+        // TODO: create, attach fragment showing patient details
         override fun onClick(v: View) {
             Toast.makeText(context,"${patient.fullName} selected", Toast.LENGTH_SHORT)
                 .show()

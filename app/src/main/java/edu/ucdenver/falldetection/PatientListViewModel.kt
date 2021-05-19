@@ -6,6 +6,7 @@ import java.util.*
 class PatientListViewModel : ViewModel() {
     val patients = mutableListOf<Patient>()
 
+    //TODO: implement Room database
     private var firstNames = listOf("Anne", "Jane", "Susan", "John", "Dan")
     private var lastNames = listOf("Doe", "Smith", "Thompson", "Black", "Johnson")
     private var dateNow = Calendar.getInstance()
