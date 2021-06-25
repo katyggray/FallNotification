@@ -18,12 +18,16 @@ class BluetoothFragment : Fragment() {
 
     // This property is only valid between onCreateView and
     // onDestroyView.
-    private val binding get() = _binding!!
+    // private val binding get() = _binding!!
 
-    // TODO: attach bluetooth scanning, connection functionality
-    // TODO: implement filter on scanning results
-    // TODO: create, implement check battery button
     override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_bluetooth_scan, container, false)
+    }
+    /*override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -39,11 +43,17 @@ class BluetoothFragment : Fragment() {
             textView.text = it
         })
         return root
-    }
+    }*/
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 
+
+    companion object {
+        fun newInstance(): BluetoothFragment {
+            return BluetoothFragment()
+        }
+    }
 }

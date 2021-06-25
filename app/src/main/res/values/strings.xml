@@ -6,4 +6,5 @@
     <string name="bluetooth_filler">This fragment will start bluetooth connection</string>
     <string name="patients_filler">This fragment will list patients</string>
     <string name="home_filler">This fragment is home</string>
+    <string name="scan_button">Start Scan</string>
 </resources>
